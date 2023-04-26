@@ -17,6 +17,7 @@ public class FacultyofScience {
     public static void main(String[] args) {
         Scanner kbd= new Scanner(System.in);
         
+        //You should create a student class to hold these inputted values for every student object you make 
         System.out.println("Enter subject percentage 1:");
         int percentage1 = kbd.nextInt();
         System.out.println("Enter subject percentage 2:");
@@ -30,6 +31,7 @@ public class FacultyofScience {
          double averag = (  percentage1+percentage2+percentage3+percentage4+percentage5)/5;
 System.out.println("Average of other 5 subjects: "+( + percentage1+percentage2+percentage3+percentage4+percentage5)/5);
  
+ //Seeing how frequently you make use of the calculate average, you should place it in a method in the student class
 if (averag>=65)
 {System.out.println("You've met the minimum NSC average requirements to QUALIFY in the Faculty Of Science");
         } 
