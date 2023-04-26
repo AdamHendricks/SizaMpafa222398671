@@ -28,7 +28,29 @@ public class FacultyOfAgriSciences {
         int percentage5 = kbd.nextInt();
          double averag = (  percentage1+percentage2+percentage3+percentage4+percentage5)/5;
 System.out.println("Average of other 5 subjects: "+( + percentage1+percentage2+percentage3+percentage4+percentage5)/5);
-
+        
+        //Adam's edit:
+        System.out.println("Enter your highest NSC percentage between English and Afrikaans:");
+        int langPercentage = kbd.nextInt();
+        System.out.println("Enter your Mathematics percentage:");
+        int mathPercentage = kbd.nextInt();
+        System.out.println("Enter your nphysical Sciences percentage:");
+        int physicsPercentage = kbd.nextInt();
+        System.out.println("Please enter your 5 best NSC percentages excluding Life Orientation: ");
+        System.out.println("Enter your next best subject percentage 1:");
+        int nextBestPercentage1 = kbd.nextInt();
+        System.out.println("Enter your next best subject percentage 2:");
+        int nextBestPercentage2 = kbd.nextInt();
+        System.out.println("Enter your next best subject percentage 3:");
+        int nextBestPercentage3 = kbd.nextInt();
+        double average = (langPercent + mathPercentage + physicsPercentage + nextBestPercentage1 + nextBestPercentage2 + nextBestPercentage3)/6;
+        System.out.println("Yourr NSC average = " + average);
+        
+        if(average >= 60 && langPercentage >= 50 && mathPercentage >= 60 && physicsPercentage >= 50){
+            System.out.println("You meet the requirements for the faculty of AgrSciences at Stellenbosch University");
+        }
+        
+        
 if (averag>=60)
 {System.out.println("You've met the minimum NSC average requirements to QUALIFY in the Faculty Of AgriSciences");
         } 
