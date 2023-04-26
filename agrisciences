@@ -1,0 +1,55 @@
+package facultyofagrisciences;
+import java.util.Scanner;
+
+/**
+ *
+ * @author SIZA M
+ */
+public class FacultyOfAgriSciences {
+
+    /**
+     * @param args the command line arguments
+     */
+    double average;
+    int perc;
+    double selectionmark;
+    public static void main(String[] args) {
+       Scanner kbd= new Scanner(System.in);
+     
+        System.out.println("Enter subject percentage 1:");
+        int percentage1 = kbd.nextInt();
+        System.out.println("Enter subject percentage 2:");
+        int percentage2 = kbd.nextInt();
+        System.out.println("Enter subject percentage 3:");
+        int percentage3 = kbd.nextInt();
+        System.out.println("Enter subject percentage 4:");
+        int percentage4 = kbd.nextInt();
+        System.out.println("Enter subject percentage 5:");
+        int percentage5 = kbd.nextInt();
+         double averag = (  percentage1+percentage2+percentage3+percentage4+percentage5)/5;
+System.out.println("Average of other 5 subjects: "+( + percentage1+percentage2+percentage3+percentage4+percentage5)/5);
+
+if (averag>=60)
+{System.out.println("You've met the minimum NSC average requirements to QUALIFY in the Faculty Of AgriSciences");
+        } 
+if (averag<60)
+    System.out.println("You failed to meet the minimum NSC average requirements to QUALIFY in the Faculty Of AgriSciences");
+
+        System.out.println("Enter Mathematics percentage:"); 
+        int Mathematics = kbd.nextInt();
+        int math= Mathematics;
+        
+        System.out.println("Enter ENGLISH OR AFRIKAANS percentage:"); 
+        int Language = kbd.nextInt();
+        int lang= Language;
+        
+        System.out.println("Enter Physical Sciences percentage:"); 
+        int PhysicalSciences  = kbd.nextInt();
+        int physics= PhysicalSciences;
+        
+        double selectionmark = (lang) +(5*averag)/7;
+        System.out.println("Selection mark:"+ selectionmark);
+        double selection= selectionmark;
+    }
+    
+}
